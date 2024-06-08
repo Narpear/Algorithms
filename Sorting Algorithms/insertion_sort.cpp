@@ -13,10 +13,6 @@ int main(){
             j--;
         }
         arr[j] = temp;
-        // for(int x: arr){
-        //     cout<<x<<", ";
-        // }
-        // cout<<"\n";
     }
     for(int x: arr){
         cout<<x<<", ";
