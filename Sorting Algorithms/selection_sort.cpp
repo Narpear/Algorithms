@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    vector<int> arr = {9,1,8,2,3,2,7,0};
+    vector<int> arr = {7, 3, 7, 2, 0, 4, 7, 6, 9, 1, 5, 8};
     int n = arr.size();
     for(int i = 0; i<n-1; i++){
         int min_index = i;

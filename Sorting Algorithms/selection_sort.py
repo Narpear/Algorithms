@@ -10,6 +10,6 @@ def selection_sort(arr):
             arr[i] = arr[min_index]
             arr[min_index] = temp
 
-nums = [7,3,7,2,0,4,7,6,9,1,5,8]
+nums = [7, 3, 7, 2, 0, 4, 7, 6, 9, 1, 5, 8]
 selection_sort(nums)
 print(nums)
