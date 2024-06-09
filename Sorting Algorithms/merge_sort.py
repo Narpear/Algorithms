@@ -17,9 +17,11 @@ def merge(arr, left, right, mid):
     while left_counter<len(left_copy):
         arr[sorted_counter] = left_copy[left_counter]
         left_counter += 1
+        sorted_counter += 1
     while right_counter<len(right_copy):
         arr[sorted_counter] = right_copy[right_counter]
         right_counter += 1
+        sorted_counter += 1
       
 def merge_sort(arr, left, right):
 
@@ -33,6 +35,7 @@ def merge_sort(arr, left, right):
     merge(arr, left, right, mid)
 
 
-arr = [4, 7, 2, 9, 2, 0, 1, 7, 3, 8, 0, 4, 2, 6]
+# arr = [4, 7, 2, 9, 2, 0, 1, 7, 3, 8, 0, 4, 2, 6]
+arr = [5, 3s, 7, 8, 4, 1]
 merge_sort(arr, 0, len(arr))
 print(arr)
