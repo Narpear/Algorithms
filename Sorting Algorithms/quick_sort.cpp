@@ -2,8 +2,33 @@
 #include <vector>
 using namespace std;
 
-int partition(vector<int> &arr, int left, int right){
-    
+int partition(vector<int> &arr, int left, int right) {
+    int i = left;
+    int j = right - 1;
+    int pivot = arr[right];
+
+    while (i <= j) {
+        while (arr[i] < pivot && i < right) {
+            i++;
+        }
+        while (arr[j] > pivot && j > left) {
+            j--;
+        }
+
+        if (i <= j) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+    }
+
+    int temp = arr[i];
+    arr[i] = arr[right];
+    arr[right] = temp;
+
+    return i;
 }
 
 void quick_sort(vector<int> &arr, int left, int right){
