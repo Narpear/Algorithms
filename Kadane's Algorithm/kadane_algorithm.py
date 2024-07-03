@@ -1,3 +1,5 @@
+# Kadane's Algorithm is used to find the maximum subarray sum of an array
+
 from typing import List
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
